@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Геометрия Пространства | Премиум остекление</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#000000',
+                            white: '#FFFFFF',
+                            aluminum: '#97A3AE',
+                            frost: '#C8CEDA',
+                            light: '#F5F5F5'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Golos Text"', 'sans-serif'],
+                    },
+                    spacing: {
+                        'section': '8rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #F5F5F5; }
+        ::-webkit-scrollbar-thumb { background: #97A3AE; }
+        ::-webkit-scrollbar-thumb:hover { background: #000000; }
+        .text-balance { text-wrap: balance; }
+        
+        /* Сетка по брендбуку: текст слева (3-4 колонки), отступ, фото справа */
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body class="font-sans text-brand-black bg-brand-white antialiased selection:bg-brand-aluminum selection:text-brand-white">
+
+    <header class="fixed top-0 w-full z-50 bg-brand-white/90 backdrop-blur-md border-b border-brand-frost/50 transition-all">
+        <div class="max-w-[1920px] mx-auto px-6 md:px-12 xl:px-24 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-4">
+                <!-- Фирменный логотип из файла -->
+                <img src="https://i.yapx.ru/eKaMk.png" alt="Логотип Геометрия Пространства" class="h-10 w-auto object-contain">
+                <span class="text-xl md:text-2xl font-medium tracking-tight uppercase leading-none hidden sm:block">
+                    Геометрия<br>Пространства
+                </span>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-10 text-sm font-medium uppercase tracking-widest">
+                <a href="#about" class="hover:text-brand-aluminum transition-colors">О нас</a>
+                <a href="#systems" class="hover:text-brand-aluminum transition-colors">Системы</a>
+                <a href="#events" class="hover:text-brand-aluminum transition-colors">События</a>
+                <a href="#brombal" class="hover:text-brand-aluminum transition-colors">BROMBAL</a>
+                <a href="#projects" class="hover:text-brand-aluminum transition-colors">Проекты</a>
+            </nav>
+
+            <a href="#contacts" class="hidden md:inline-flex px-8 py-3 bg-brand-black text-brand-white text-sm font-medium uppercase tracking-widest hover:bg-brand-aluminum transition-colors">
+                Оставить заявку
+            </a>
+            
+            <button class="lg:hidden text-brand-black">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <section class="relative min-h-[90vh] flex items-end pb-24">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Панорамное остекление" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-brand-black/30"></div>
+            </div>
+            
+            <div class="relative z-10 w-full max-w-[1920px] mx-auto px-6 md:px-12 xl:px-24">
+                <div class="brand-grid">
+                    <div class="col-span-12 md:col-span-8 lg:col-span-9 text-brand-white">
+                        <h1 class="text-4xl md:text-6xl xl:text-[5rem] font-medium tracking-tighter uppercase leading-[0.9] mb-8 text-balance">
+                            Остекление загородных домов премиум-класса
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-y border-brand-frost bg-brand-white py-12">
+            <div class="max-w-[1920px] mx-auto px-6 md:px-12 xl:px-24">
+                <div class="brand-grid items-center">
+                    <div class="col-span-12 md:col-span-3 text-sm text-brand-aluminum uppercase tracking-widest mb-6 md:mb-0">
+                        Официальные партнеры
+                    </div>
+                    <div class="col-span-12 md:col-span-8 md:col-start-5 flex flex-wrap gap-12 md:gap-24 items-center text-xl md:text-3xl font-medium tracking-tight uppercase">
+                        <span>BROMBAL</span>
+                        <span>SCHÜCO</span>
+                        <span>SOLARLUX</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-section bg-brand-white">
+            <div class="max-w-[1920px] mx-auto px-6 md:px-12 xl:px-24">
+                <div class="brand-grid gap-y-12">
+                    
+                    <div class="col-span-12 md:col-span-5 lg:col-span-4">
+                        <h2 class="text-2xl font-medium uppercase tracking-tight mb-8">Кто мы</h2>
+                        <div class="text-lg leading-relaxed space-y-6">
+                            <p>Привет! Мы — Андрей и Никита Степановы, отец и сын, партнеры в компании Геометрия Пространства.</p>
+                            <p>Геометрия Пространства — семейная компания, основанная на профессиональном опыте и личных ценностях. Мы специализируемся на разработке и поставке остекления для частных домов премиум-класса.</p>
+                            <p>Наш подход — это максимальное внимание к архитектурным задачам и персональная ответственность за результат. Благодаря партнёрству двух поколений мы обеспечиваем высокий уровень вовлечённости на каждом этапе — от концепции до реализации.</p>
+                            <p>С нами архитекторы и заказчики получают не просто качественные решения, а уверенность в том, что проект будет реализован без компромиссов.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-span-12 md:col-span-7 md:col-start-6 lg:col-span-7 lg:col-start-6">
+                        <figure class="w-full h-full min-h-[500px] relative overflow-hidden group">
+                            <!-- Фотография Андрея и Никиты Степановых -->
+                            <img src="https://i.yapx.ru/eKaKQ.jpg" 
+                                 alt="Андрей и Никита Степановы - основатели" 
+                                 class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700">
+                            <figcaption class="absolute bottom-6 left-6 text-brand-white text-sm uppercase tracking-widest drop-shadow-md">
+                                Андрей и Никита Степановы
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-section bg-brand-light">
+            <div class="max-w-[1920px] mx-auto px-6 md:px-12 xl:px-24">
+                <div class="brand-grid gap-y-12">
+                    <div class="col-span-12 md:col-span-5 lg:col-span-4">
+                        <h2 class="text-2xl font-medium uppercase tracking-tight mb-8">Главная идея</h2>
+                        <div class="text-lg leading-relaxed space-y-6">
+                            <p>Панорамное остекление только называют окном. На деле оно заменяет собой часть стены: держит тепло, отсекает шум, выдерживает ветровую нагрузку, формирует облик дома снаружи и определяет комфорт внутри.</p>
+                            <p>Именно поэтому сложная система остекления должна иметь одного автора в смысле ответственности за конечный результат. Компания не привязана к собственному производству и в этом видит свою свободу: выбирать под конкретную задачу лучшее решение, а не единственное доступное.</p>
+                            <p>В одном проекте могут сочетаться дерево-алюминий, сталь, архитектурная бронза и разные системы. При этом проектирование и управление процессом остаются внутри компании: «Геометрия пространства» ведёт остекление от первого эскиза до ввода в эксплуатацию и дальнейшего сопровождения.</p>
+                        </div>
+                    </div>
+                    <div class="col-span-12 md:col-span-7 md:col-start-6 lg:col-span-7 lg:col-start-6">
+                         <img src="https://i.yapx.ru/eKaUH.jpg" alt="Архитектурное решение" class="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="systems" class="py-section bg-brand-white">
+            <div class="max-w-[1920px] mx-auto px-6 md:px-12 xl:px-24">
+                <div class="brand-grid mb-24">
+                    <div class="col-span-12 md:col-span-4">
+                        <h2 class="text-2xl font-medium uppercase tracking-tight">Продуктовая<br>линейка</h2>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Панорамные системы -->
+                    <div class="group border-t border-brand-black pt-6">
+                        <h3 class="text-xl font-medium mb-4 group-hover:text-brand-aluminum transition-colors">Панорамные системы</h3>
+                        <p class="text-sm text-brand-aluminum uppercase tracking-widest mb-12">Высота створки до 6 м</p>
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://i.yapx.ru/eKaN4.jpg" alt="Панорамные системы" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </div>
+                    </div>
+                    <!-- Складные системы -->
+                    <div class="group border-t border-brand-black pt-6">
+                        <h3 class="text-xl font-medium mb-4 group-hover:text-brand-aluminum transition-colors">Складные системы</h3>
+                        <p class="text-sm text-brand-aluminum uppercase tracking-widest mb-12">Высота створок до 4,5 м</p>
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://i.yapx.ru/eKaNX.jpg" alt="Складные системы" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </div>
+                    </div>
+                    <!-- Пивотные двери -->
+                    <div class="group border-t border-brand-black pt-6">
+                        <h3 class="text-xl font-medium mb-4 group-hover:text-brand-aluminum transition-colors">Пивотные двери</h3>
+                        <p class="text-sm text-brand-aluminum uppercase tracking-widest mb-12">Любой дизайн, до 4 м</p>
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://i.yapx.ru/eKaLa.jpg" alt="Пивотные двери" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="py-section bg-brand-light">
+            <div class="max-w-[1920px] mx-auto px-6 md:px-12 xl:px-24">
+                <h2 class="text-2xl font-medium uppercase tracking-tight mb-12">События</h2>
+                
+                <div class="flex flex-col gap-16">
+                    <!-- Актуальное событие -->
+                    <div>
+                        <h3 class="text-2xl md:text-4xl font-medium mb-8 leading-tight">HOUSE talk — паблик толк о доме как целостной системе ⚡️</h3>
+                        
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+                            <div class="lg:col-span-8 order-2 lg:order-1">
+                                <ul class="text-lg md:text-xl text-brand-aluminum font-medium mb-8 space-y-2">
+                                    <li>• 4 сентября | 14:00</li>
+                                    <li>• Брусницын лофт | Кожевенная линия, 30</li>
+                                </ul>
+                                
+                                <div class="text-lg md:text-xl leading-relaxed space-y-6">
+                                    <p>В формате public talk поговорим с коллегами о том, как формируется современный частный дом — от архитектурной идеи до деталей интерьера и внешнего облика.</p>
+                                    <p>В завершение коснёмся внутренних процессов в компаниях и коммуникации с заказчиком — тех элементов, которые часто определяют успех проекта не меньше, чем архитектура.</p>
+                                </div>
+                                
+                                <div class="mt-8">
+                                    <a href="https://t.me/geopro_premiumwindows/287" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium uppercase tracking-widest hover:text-brand-aluminum transition-colors border-b border-brand-black hover:border-brand-aluminum pb-1">
+                                        Подробнее в Telegram
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Прошедшие события -->
+                    <div class="pt-12 border-t border-brand-frost">
+                        <h3 class="text-sm font-medium mb-6 uppercase tracking-widest text-brand-aluminum">Прошедшие события</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <p class="text-xl md:text-2xl font-medium mb-4">АРХМОСКВА 2026: Стенд компании "ГЕОМЕТРИЯ ПРОСТРАНСТВА"</p>
+                                <p class="text-lg leading-relaxed text-brand-aluminum">Уникальные металлические окна и двери. Оконные конструкции любых вариантов открывания, любых форм из бронзы, стали и латуни.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="brombal" class="py-section bg-brand-black text-brand-white">
+            <div class="max-w-[1920px] mx-auto px-6 md:px-12 xl:px-24">
+                <div class="brand-grid gap-y-12">
+                    
+                    <div class="col-span-12 md:col-span-4 lg:col-span-3 flex flex-col">
+                        <h2 class="text-2xl font-medium uppercase tracking-tight text-brand-frost mb-8 md:mb-12">Уникальность &<br>BROMBAL</h2>
+                        
+                        <div class="relative w-full mt-auto overflow-hidden group">
+                            <!-- Изображение возвращено в оригинальное положение -->
+                            <img src="https://i.yapx.ru/eKakR.jpg" alt="Производство Brombal" class="w-full h-auto object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700">
+                        </div>
+                    </div>
+
+                    <div class="col-span-12 md:col-span-8 md:col-start-5 lg:col-span-8 lg:col-start-5">
+                        <div class="text-2xl md:text-3xl leading-snug font-medium mb-16 text-balance">
+                            Есть задачи, на которых обычные системы светопрозрачных конструкций заканчиваются: слишком большой пролёт, слишком тонкое сечение, форма, которую не собрать в алюминии.
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 border-t border-brand-frost/30 pt-12">
+                            <div>
+                                <p class="text-lg leading-relaxed text-brand-light">
+                                    «Геометрия пространства» — эксклюзивный представитель Brombal в России. Решения этой фабрики из стали и архитектурной бронзы дают то, что недоступно другим материалам: сварку и гибку, экстремальные габариты, тонкие профили при высокой прочности.
+                                </p>
+                            </div>
+                            <div>
+                                <p class="text-lg leading-relaxed text-brand-light mb-8">
+                                    Предел бывает и эстетическим: фактура металла, жидкая окраска, фурнитура в части проектов решающим становится именно внешний вид. Для архитектора это полная свобода творчества. Стальные окна делают и другие, но на пределе сложности остаётся Brombal.
+                                </p>
+                                <a href="https://brombal.ru/" target="_blank" class="inline-flex items-center gap-3 pb-1 border-b border-brand-white hover:text-brand-aluminum hover:border-brand-aluminum transition-colors text-sm uppercase tracking-widest">
+                                    Официальный сайт Brombal
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-section bg-brand-white">
+            <div class="max-w-[1920px] mx-auto px-6 md:px-12 xl:px-24">
+                <div class="flex justify-between items-end mb-16">
+                    <h2 class="text-2xl font-medium uppercase tracking-tight">Избранные проекты</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="relative group h-[50vh] md:h-[70vh] overflow-hidden bg-brand-light">
+                        <img src="https://i.yapx.ru/eKaQE.jpg" alt="Река Сестра" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute bottom-8 left-8 text-brand-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                            <h3 class="text-2xl font-medium mb-2">Река Сестра, Ленинградская область</h3>
+                            <p class="text-sm uppercase tracking-widest">Schüco</p>
+                        </div>
+                    </div>
+                    <div class="relative group h-[50vh] md:h-[70vh] overflow-hidden bg-brand-light">
+                        <img src="https://i.yapx.ru/eKaO1.jpg" alt="СПА Ушково" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute bottom-8 left-8 text-brand-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                            <h3 class="text-2xl font-medium mb-2">СПА, Ушково</h3>
+                            <p class="text-sm uppercase tracking-widest">Solarlux</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contacts" class="bg-brand-white border-t border-brand-frost pt-20 pb-12">
+        <div class="max-w-[1920px] mx-auto px-6 md:px-12 xl:px-24">
+            
+            <div class="brand-grid gap-y-16 mb-24">
+                <div class="col-span-12 md:col-span-5 lg:col-span-5">
+                    <h2 class="text-4xl md:text-6xl font-medium uppercase tracking-tighter leading-none mb-8">
+                        Свяжитесь<br>с нами
+                    </h2>
+                    <p class="text-lg text-brand-aluminum max-w-md">
+                        Оставьте заявку, и мы свяжемся с вами для обсуждения архитектурных задач и подготовки коммерческого предложения за 4-6 дней.
+                    </p>
+                </div>
+
+                <div class="col-span-12 md:col-span-7 lg:col-span-6 lg:col-start-7 grid grid-cols-1 sm:grid-cols-2 gap-12">
+                    <div>
+                        <h4 class="text-sm uppercase tracking-widest text-brand-aluminum mb-4">Шоурум</h4>
+                        <address class="not-italic text-lg leading-relaxed">
+                            Санкт-Петербург,<br>
+                            Красногвардейская пл. 3Е.<br>
+                            Design District DAA,<br>
+                            этаж 3, офис 135
+                        </address>
+                    </div>
+                    <div>
+                        <h4 class="text-sm uppercase tracking-widest text-brand-aluminum mb-4">Связь</h4>
+                        <ul class="text-lg space-y-2">
+                            <li><a href="tel:+78126226060" class="hover:text-brand-aluminum transition-colors">Телефон: +7 812 622 60-60</a></li>
+                            <li><a href="mailto:info@geopro.ru" class="hover:text-brand-aluminum transition-colors">Email: info@geopro.ru</a></li>
+                            <li><a href="mailto:project@geopro.ru" class="hover:text-brand-aluminum transition-colors">Проекты: project@geopro.ru</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-brand-frost pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-brand-aluminum uppercase tracking-widest">
+                <p>&copy; 2026 Геометрия Пространства.</p>
+                <div class="flex gap-8 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-brand-black transition-colors">Политика конфиденциальности</a>
+                    <a href="https://geopro.ru/" target="_blank" class="hover:text-brand-black transition-colors">geopro.ru</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
